@@ -4,17 +4,17 @@ This is a power regulator board for my <a href="https://github.com/MouseBiteLabs
 
 [Board pictures]
 
-## Disclaimer - MUST READ
+## Important Things Before You Start
 
 I highly suggest testing this board before installation in a Game Boy. Failure to do so may result in an irreversibly damaged Game Boy. See the testing sequence below.
 
-![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/deb4b43b-eeb8-43c7-b7f9-2ab094964ef5)
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/e5de26d0-6b67-4bbc-820b-3a5d9aa0e80e)
 
 **This is a complicated build that requires high level soldering skills. Please do not attempt if you do not have advanced soldering experience. Do not attempt to hand-solder the QFN components on this board, you must use a hot plate.**
 
 **I am not responsible for any damage done to you, your Game Boy, or your dwelling. Lithium ion batteries are a huge fire hazard. You accept any and all risks associated with attempting this project.**
 
-![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/ff19da24-23ef-4fb8-ac65-065af7fdbe41)
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/518b2961-8862-4ea5-a96e-8b36841dcca5)
 
 ## Successful Build Requirements
 
@@ -28,14 +28,14 @@ In order to effectively, properly, and *safely* build this board, you really mus
 6) Have modded a Game Boy console before
 7) Have a lot of patience (do not rush!)
 8) Double check the assembled board before final installment using the testing procedure below
-9) Have homeownder's/renter's insurance
+9) Have homeowner's/renter's insurance
 
 ## Board Characteristics and Order Information
 
 The zipped folder contains all the gerber files for this board.
 -	Layers: 4
 -	Thickness: 1.6mm or thinner
--	Surface Finish: ENIG is highly recommended
+-	Surface Finish: ENIG is recommended, HASL will work too
 
 You can use the zipped folder with the gerber files at any board fabricator you like. **I am not selling this board.**
 
@@ -44,13 +44,12 @@ You can use the zipped folder with the gerber files at any board fabricator you 
 Some features of this power board include: 
 
 * Changing the power switch to a "soft power switch," meaning the main power of the Game Boy does not flow through the switch. A dirty power switch can severly impact performance, so using this scheme can remedy that issue.
-* Generally improved efficiency over the OEM regulator, and increased switching frequency.
 * Bootloop protection circuitry to prevent overdischarge of the battery past 3 V (a safe limit for lithium ion batteries), and to allow the Game Boy to die gracefully instead of violently stuttering until the regulator gives up.
 * Load sharing (aka "power path") for charge-and-play capability.
 
 This board was tested exclusively with this battery; any deviation from this one is 100% up to the user to determine compatibility: https://retrogamerepairshop.com/collections/gbp-power/products/102045-900mah-lipo-battery-cell?variant=40148887437484
 
-**This battery includes a DW01 protection IC to prevent overcharge and deep overdischarge. Any battery used in this build must include a DW01 protection IC. This board does not include these protections.**
+**This battery includes a DW01 protection IC to prevent overcharge and deep overdischarge. Any battery used in this build must include a DW01 protection IC. This circuit board does not include these protections.**
 
 ## Testing and Installation Steps
 
@@ -58,7 +57,7 @@ Testing the assembled board *is mandatory.* If you have misassembled it, a part 
 
 ### Checking for Short Circuits
 
-The following points must read as an open circuit ("OL") on a multimeter in resistance mode:
+Check these measurements on the board when it's not installed in a Game Boy. The following points must read as an open circuit ("OL") on a multimeter in resistance mode:
 
 1) DC and BT+
 2) DC and LIPO-
@@ -77,9 +76,37 @@ The following points must read as an open circuit ("OL") on a multimeter in resi
 
 ## Bill of Materials
 
-A prepopulated cart from Mouser can be found here: [link]. The quantities in the cart are enough such that there is at least one extra component in case you drop or lose one, except for U1 and U2 as they are more expensive. You may want to consider ordering multiple quantities of those parts just in case.
+A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b428eecae2. You may want to consider ordering multiple quantities of some parts just in case you lose some during assembly.
 
+### Regulator Board
 
+| Reference Designators       | Qty | Value/Part Number  | Package  | Description      | Source                                           |
+| --------------------------- | --- | ------------------ | -------- | ---------------- | ------------------------------------------------ |
+| C1, C3, C5                  | 3   | 22uF               | 0805     | Capacitor (MLCC) | [https://mou.sr/46mVnVR](https://mou.sr/46mVnVR) |
+| C2, C6                      | 2   | 10uF               | 0603     | Capacitor (MLCC) | [https://mou.sr/3mZtSkF](https://mou.sr/3mZtSkF) |
+| C4                          | 1   | 0.1uF              | 0603     | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| D1                          | 1   | SMF5.0A-T13        | SOD-123  | TVS Diode        | [https://mou.sr/46lYsWi](https://mou.sr/46lYsWi) |
+| D2                          | 1   | 150060RS75000      | 0603     | LED              | [https://mou.sr/3ul6dOR](https://mou.sr/3ul6dOR) |
+| D3                          | 1   | VSS8D5M12HM3/H     | DO-221AD | Schottky Diode   | [https://mou.sr/3sHvulW](https://mou.sr/3sHvulW) |
+| L1                          | 1   | 2.2uH              | 1212     | Inductor         | [https://mou.sr/46qW94a](https://mou.sr/46qW94a) |
+| Q1                          | 1   | MMBT3906           | SOT23    | PNP BJT          | [https://mou.sr/3G7ub2I](https://mou.sr/3G7ub2I) |
+| Q2, Q4                      | 2   | 2N7002             | SOT23    | N-channel MOSFET | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
+| Q3                          | 1   | MMBT3904           | SOT23    | NPN BJT          | [https://mou.sr/3Rv7yfA](https://mou.sr/3Rv7yfA) |
+| R1, R4, R8                  | 3   | 100k               | 0603     | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R2, R3, R5, R6, R7, R9, R11 | 7   | 10k                | 0603     | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R10                         | 1   | 2.49k              | 0603     | Resistor         | [https://mou.sr/3G7MS6w](https://mou.sr/3G7MS6w) |
+| U1                          | 1   | TPS61202           | VSON-10  | Boost Converter  | [https://mou.sr/47hIE8c](https://mou.sr/47hIE8c) |
+| U2                          | 1   | TPS3840DL30        | SOT23-5  | Supervisory IC   | [https://mou.sr/47JYTuN](https://mou.sr/47JYTuN) |
+| U3                          | 1   | MCP73871-2CAI/ML   | QFN-20   |                  | [https://mou.sr/47F8yT5](https://mou.sr/47F8yT5) |
+| \--                         | 1   | 10129378-904001BLF | \--      | 1x4 Header Pins  | [https://mou.sr/40SXaAX](https://mou.sr/40SXaAX) |
+| \--                         | 1   | 10129378-903001BLF | \--      | 1x3 Header Pins  | [https://mou.sr/47nzLdm](https://mou.sr/47nzLdm) |
+
+### USB-C Board
+
+| Reference Designators | Qty | Value/Part Number | Package | Description     | Source                                           |
+| --------------------- | --- | ----------------- | ------- | --------------- | ------------------------------------------------ |
+| J1                    | 1   | USB4105-GF-A      | \--     | USB-C Connector | [https://mou.sr/3sN2byf](https://mou.sr/3sN2byf) |
+| R1, R2                | 2   | 5.1k              | 0603    | Resistor        | [https://mou.sr/49J9uru](https://mou.sr/49J9uru) |
 
 ## Potential Issues
 
