@@ -2,7 +2,7 @@
 
 This is a power regulator board for my <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color">Game Boy Pocket Color (MGBC)</a> project for use with LiPo batteries. But hey, have you seen my other regulator board, the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouser Power Board</a>? It's also really cool and doesn't use a battery that can explode.
 
-[Board pictures]
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/ff710ad9-7f7b-4342-af3f-11c4f0c58c88)
 
 ## Important Things Before You Start
 
@@ -15,6 +15,8 @@ I highly suggest testing this board before installation in a Game Boy. Failure t
 **I am not responsible for any damage done to you, your Game Boy, or your dwelling. Lithium ion batteries are a huge fire hazard. You accept any and all risks associated with attempting this project.**
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/518b2961-8862-4ea5-a96e-8b36841dcca5)
+
+If you are at all doubting your ability to assemble this board, I recommend Nataliethenerd's Safer Charge DC, as it comes pre-assembled with everything you need: https://www.nataliethenerd.com/product-page/safer-charge-dc
 
 ## Successful Build Requirements
 
@@ -38,6 +40,8 @@ The zipped folder contains all the gerber files for this board.
 -	Surface Finish: ENIG is recommended, HASL will work too
 
 You can use the zipped folder with the gerber files at any board fabricator you like. **I am not selling this board.**
+
+Hosted on OSH Park here: https://oshpark.com/shared_projects/ldmRhdWn
 
 ## Features
 
