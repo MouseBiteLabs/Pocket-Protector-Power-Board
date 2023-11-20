@@ -1,4 +1,4 @@
-# Pocket Protector Power Board
+# Pocket Protector Power Board - UNDER CONSTRUCTION
 
 This is a power regulator board for my <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color">Game Boy Pocket Color (MGBC)</a> project for use with LiPo batteries. But hey, have you seen my other regulator board, the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouser Power Board</a>? It's also really cool and doesn't use a battery that can explode.
 
@@ -16,7 +16,13 @@ I highly suggest testing this board before installation in a Game Boy. Failure t
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/518b2961-8862-4ea5-a96e-8b36841dcca5)
 
+## Alternate LiPo Options
+
 If you are at all doubting your ability to assemble this board, I recommend Nataliethenerd's Safer Charge DC, as it comes pre-assembled with everything you need: https://www.nataliethenerd.com/product-page/safer-charge-dc
+
+<a href="https://www.nataliethenerd.com/product-page/safer-charge-dc"><img src="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/2f21e403-e07e-4f55-aace-cad3eed82622" /></a>
+
+Another option is to **have someone more skilled than you assemble the board for you.** I am not one of those people, but they certainly exist.
 
 ## Successful Build Requirements
 
@@ -78,6 +84,22 @@ Check these measurements on the board when it's not installed in a Game Boy. The
 1) Check R10. It must be approximately 2.49 kΩ.
 2) Check R9. It must be approximately 10 kΩ.
 
+### Low Power Test
+
+To do
+
+### Preparing and Installing the USB-C Board
+
+The USB-C breakout board sits on top of where the DC jack used to be. The board thickness should be 1.2mm for best fitment. 
+
+1) Trim the legs of the USB-C port before soldering it in the board, so that the bottom of the board is a flush surface.
+2) Solder in the port, then the 5.1kΩ resistors R1 and R2.
+3) Place the board on top of the MGBC board, line up the solder pads through the holes, and flow solder through all five holes to secure it to the board.
+
+### Installing the Power Board
+
+To do
+
 ## Bill of Materials
 
 A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b428eecae2. You may want to consider ordering multiple quantities of some parts just in case you lose some during assembly.
@@ -112,9 +134,15 @@ A prepopulated cart from Mouser can be found here: https://www.mouser.com/Projec
 | J1                    | 1   | USB4105-GF-A      | \--     | USB-C Connector | [https://mou.sr/3sN2byf](https://mou.sr/3sN2byf) |
 | R1, R2                | 2   | 5.1k              | 0603    | Resistor        | [https://mou.sr/49J9uru](https://mou.sr/49J9uru) |
 
+### Battery
+
+As explained before, the battery you use **must** include a DW01 protection device. **DO NOT USE BARE CELLS**. Also note that the battery you order might be defective itself, so it is **up to you** to make sure it's safe. If your battery ever feels warm, or you measure voltages less than 2.45 V or greater than 4.2 V, the battery is defective and *should **not** be used*.
+
+Testing was done exclusively with this battery: https://retrogamerepairshop.com/collections/gbp-power/products/102045-900mah-lipo-battery-cell?variant=40148887437484
+
 ## Potential Issues
 
-- The battery might explode.
+- I really can't stress enough that this project needs to be done correctly. Lithium ion batteries are only as safe as you make them. I am also only one person; while I have tested this board a lot, there may be an inherent flaw I missed (this is another reason why it is mandatory to have a DW01 protection device on the battery).
 
 ## Revision History
 
