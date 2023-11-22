@@ -40,6 +40,10 @@ In order to effectively, properly, and *safely* build this board, you really mus
 
 ## Board Characteristics and Order Information
 
+### Power Board
+
+This is the board that sits in the U5 socket on the MGBC board.
+
 The zipped folder contains all the gerber files for this board.
 -	Layers: 4
 -	Thickness: 1.6mm or thinner
@@ -48,6 +52,19 @@ The zipped folder contains all the gerber files for this board.
 You can use the zipped folder with the gerber files at any board fabricator you like. **I am not selling this board.**
 
 Hosted on OSH Park here: https://oshpark.com/shared_projects/ldmRhdWn
+
+### USB-C Adapter Board
+
+This breakout board adapts a USB-C port to the MGBC's DC jack footprint. Assemble the parts to this board (may need to trim the USB-C port legs to be flush with the board), then place on the MGBC board and flow solder into the DC jack socket holes through to the pads on the back of this board to secure it.
+
+The zipped folder contains all the gerber files for this board.
+-	Layers: 2
+-	Thickness: 1.2mm is recommended
+-	Surface Finish: HASL or ENIG
+
+You can use the zipped folder with the gerber files at any board fabricator you like. **I am not selling this board.**
+
+Hosted on OSH Park here: https://oshpark.com/shared_projects/hsA91SMe
 
 ## Features
 
