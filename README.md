@@ -82,19 +82,48 @@ This board was tested exclusively with this battery; any deviation from this one
 
 Testing the assembled board *is mandatory.* If you have misassembled it, a part is incorrect, if there is a hidden solder bridge, or one of many other issues - your 5 V supply might be too high when you turn it on! This is not ideal for your Game Boy! But also, importantly, you may cause damage to your battery (which can explode). So you absolutely need to make sure everything is connected properly and working as expected.
 
-### Checking for Short Circuits
+### Top Side Assembly and Testing for Short Circuits
 
-Check these measurements on the board when it's not installed in a Game Boy. The following points must read as an open circuit ("OL") on a multimeter in resistance mode:
+Assemble the top side parts.
 
-1) DC and BT+
-2) DC and LIPO-
-3) DC and LIPO+
-4) BT+ and LIPO-
-5) BT+ and LIPO+
-6) LIPO+ and LIPO-
-7) Pin 2 and pin 3 (middle and bottom holes on the left set of 3 holes)
-8) Pin 4 and pin 7 (top and bottom holes on the right set of 4 holes)
-9) Pin 2 and pin 7 (middle hole on the left and top hole on the right)
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/a43da905-4812-4adc-804f-7f06c126c039)
+
+Afterwards, you'll want to check for short circuits on the charging IC (U3) with a multimeter. Finding them now will make your life much easier later. A short circuit will read as approximately 0 ohms on your multimeter. You can access (nearly) all the pertinent points via the backside of the PCB. See net definitions here:
+
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/58f502a5-179e-43c5-8655-e216db90307c)
+
+Check to make sure the following measurements are not short circuited (0 ohms):
+
+1) BT+ and VUSB
+2) BT+ and GND
+3) VUSB and R7
+4) VUSB and GND
+5) VUSB and VPOS
+6) R9 and GND
+7) R9 and VPOS
+8) VPOS and SW
+9) VPOS and VCC
+10) VPOS and 5V
+11) VPOS and DC
+12) VPOS and BT+
+
+One last set of measurements is to check R10 on the front side of the board.
+
+1) Measure the resistance across the terminals of R10. It should read approximately 2.49 kΩ, +/- 1%.
+2) Measure the resistance across the top terminal of R10 to the top terminal of R9 (on the back side of the board). Make sure it is not a short circuit.
+
+Any measured short circuits indicates a solder bridge somewhere on the board, most likely on the QFN package.
+
+### Testing 5V Supply
+
+The next step that will make your life easier later is to test the 5V generation handled by the *other* QFN device, U1.
+
+1) Populate R5 on the backside of the board.
+2) Connect pin 3 of the board to the negative end of a power source (like a battery holder or benchtop power supply).
+3) Connect pins 1 and 2 (SW and VCC) to the positive side of the power source. Turn the switch on (if you have a switch).
+4) Measure the 5V output - positive multimeter probe on pin 7 of the board, negative probe on GND.
+
+If your voltage measures anything but 5V (+/-1%) then you have an issue. Probably a solder bridge underneath U1. 
 
 ### Checking Resistances
 
