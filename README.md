@@ -142,7 +142,7 @@ The bottom side of the board is easy to hand solder - this was done on purpose! 
 Then check these resistances with a multimeter:
 
 1) Check R9. It must be approximately 10 kΩ.
-2) Check R10. It must be approximately 2.49 kΩ.
+2) Check R10 (on the front of the board). It must be approximately 2.49 kΩ.
 
 This will also tell you if you have any new short circuits after assembling more parts. If you measure anything else, outside of a 1% margin, then something is wrong and it may be *dangerous* to use the board. Find the problem!
 
