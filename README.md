@@ -16,6 +16,14 @@ I highly suggest testing this board before installation in a Game Boy. Failure t
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/518b2961-8862-4ea5-a96e-8b36841dcca5)
 
+## Battery Safety
+
+"Bucket Mouse, all my devices have lithium ion batteries in them, and they're not dangerous. Why are you fear mongering?"
+
+I am but one hobbyist, making things in my room. The batteries you use in devices every day are created by engineering teams and produced by corporations who do rigorous testing on products they sell (or, at least, they are supposed to). Therefore, it is 100% up to *you* to safely manage these batteries, and know what you are doing. This circuit board works for me, but as I am only one person, I have blind spots and I may have missed something (please tell me if I have). Also, I am confident in my soldering abilities - I am inherently *not* confident in yours. So, please, understand these risks and proceed at your own peril.
+
+Read this article before continuing down this path: https://batteryuniversity.com/article/lithium-ion-safety-concerns
+
 ## Alternate LiPo Options
 
 If you are at all doubting your ability to assemble this board, I recommend Nataliethenerd's Safer Charge DC, as it comes pre-assembled with everything you need: https://www.nataliethenerd.com/product-page/safer-charge-dc
@@ -208,7 +216,7 @@ Testing was done exclusively with this battery: https://retrogamerepairshop.com/
 
 ## Potential Issues
 
-- I really can't stress enough that this project needs to be done correctly. Lithium ion batteries are only as safe as you make them. I am also only one person; while I have tested this board a lot, there may be an inherent flaw I missed (this is another reason why it is mandatory to have a DW01 protection device on the battery).
+- I really can't stress enough that this project needs to be done correctly. Lithium ion batteries are only as safe as you make them. I am also only one person; while I have tested this board a lot, there may be an inherent flaw I missed - this is another reason why it is mandatory to have a DW01 protection device on the battery. Another thing to keep in mind is that the battery you purchase has the chance to be defective as well! Safety while using this board is *paramount*.
 
 ## Revision History
 
