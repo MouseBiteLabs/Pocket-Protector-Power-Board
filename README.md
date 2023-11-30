@@ -82,9 +82,17 @@ This board was tested exclusively with this battery; any deviation from this one
 
 Testing the assembled board *is mandatory.* If you have misassembled it, a part is incorrect, if there is a hidden solder bridge, or one of many other issues - your 5 V supply might be too high when you turn it on! This is not ideal for your Game Boy! But also, importantly, you may cause damage to your battery (which can explode). So you absolutely need to make sure everything is connected properly and working as expected.
 
-### Top Side Assembly and Testing for Short Circuits
+### Equipment
 
-Assemble the top side parts.
+1) You will need a multimeter to check resistances and voltages.
+2) You should have some sort of power source, like a AA battery holder with alligator clips or benchtop power supply. *You can use the lithium ion battery to test, but I would recommend something a bit safer if possible.*
+3) I highly recommend getting test leads with clips, like this: https://mou.sr/47Yeuae. They really make testing easier without having to solder wires on.
+
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/9f8c8415-b49b-4e88-85ed-8134179d8872)
+
+### Step 1: Top Side Assembly and Testing for Short Circuits
+
+Assemble the top side parts using a hot plate and solder paste.
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/a43da905-4812-4adc-804f-7f06c126c039)
 
@@ -114,7 +122,7 @@ One last set of measurements is to check R10 on the front side of the board.
 
 Any measured short circuits indicates a solder bridge somewhere on the board, most likely on the QFN package.
 
-### Testing 5V Supply
+### Step 2: Testing 5V Supply
 
 The next step that will make your life easier later is to test the 5V generation handled by the *other* QFN device, U1.
 
@@ -123,18 +131,22 @@ The next step that will make your life easier later is to test the 5V generation
 3) Connect pins 1 and 2 (SW and VCC) to the positive side of the power source. Turn the switch on (if you have a switch).
 4) Measure the 5V output - positive multimeter probe on pin 7 of the board, negative probe on GND.
 
-If your voltage measures anything but 5V (+/-1%) then you have an issue. Probably a solder bridge underneath U1. 
+If your voltage measures anything but 5V (+/-1%) then you have an issue. Probably a solder bridge underneath U1. Get to troubleshooting!
 
-### Checking Resistances
+### Step 3: Populate the Back of the Board and Check Resistances
 
-1) Check R10. It must be approximately 2.49 kΩ.
-2) Check R9. It must be approximately 10 kΩ.
+The bottom side of the board is easy to hand solder - this was done on purpose! ;)
 
-### Low Power Test
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/483614f4-ae3b-46b6-92ac-5932b3801ade)
 
-To do
+Then check these resistances with a multimeter:
 
-### Preparing and Installing the USB-C Board
+1) Check R9. It must be approximately 10 kΩ.
+2) Check R10. It must be approximately 2.49 kΩ.
+
+This will also tell you if you have any new short circuits after assembling more parts. If you measure anything else, outside of a 1% margin, then something is wrong and it may be *dangerous* to use the board. Find the problem!
+
+### Step 4: Preparing and Installing the USB-C Board
 
 The USB-C breakout board sits on top of where the DC jack used to be. The board thickness should be 1.2mm for best fitment. 
 
@@ -142,7 +154,15 @@ The USB-C breakout board sits on top of where the DC jack used to be. The board 
 2) Solder in the port, then the 5.1kΩ resistors R1 and R2.
 3) Place the board on top of the MGBC board, line up the solder pads through the holes, and flow solder through all five holes to secure it to the board.
 
-### Installing the Power Board
+### Step 5: Charge Testing
+
+To do
+
+### Step 6: Testing 5V Supply With Lithium Ion Battery
+
+To do
+
+### Step 7: Final Installation
 
 To do
 
