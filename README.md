@@ -20,7 +20,7 @@ I highly suggest testing this board before installation in a Game Boy. Failure t
 
 "Bucket Mouse, all my devices have lithium ion batteries in them, and they're not dangerous. Why are you fear mongering?"
 
-I am but one hobbyist, making things in my room. The batteries you use in devices every day are created by engineering teams and produced by corporations who do rigorous testing on products they sell (or, at least, they are supposed to). Therefore, it is 100% up to *you* to safely manage these batteries, and know what you are doing. This circuit board works for me, but as I am only one person, I have blind spots and I may have missed something (please tell me if I have). Also, I am confident in my soldering abilities - I am inherently *not* confident in yours. So, please, understand these risks and proceed at your own peril.
+I am but one hobbyist, making things in my room. The batteries and battery management systems you use in devices every day are created by engineering teams and produced by corporations who do rigorous testing on products they sell (or, at least, they are supposed to). Therefore, it is 100% up to *you* to safely manage these batteries, and know what you are doing, and know what to look out for with the batteries you purchase. This circuit board works for me, but as I am only one person, I have blind spots and I may have missed something (please tell me if I have). Also, I am confident in my soldering abilities - I am inherently *not* confident in yours. So, please, understand these risks and proceed at your own peril.
 
 Read this article before continuing down this path: https://batteryuniversity.com/article/lithium-ion-safety-concerns
 
@@ -213,6 +213,8 @@ A prepopulated cart from Mouser can be found here: https://www.mouser.com/Projec
 As explained before, the battery you use **must** include a DW01 protection device. **DO NOT USE BARE CELLS**. Also note that the battery you order might be defective itself, so it is **up to you** to make sure it's safe. If your battery ever feels warm, or you measure voltages less than 2.45 V or greater than 4.2 V, the battery is defective and *should **not** be used*.
 
 Testing was done exclusively with this battery: https://retrogamerepairshop.com/collections/gbp-power/products/102045-900mah-lipo-battery-cell?variant=40148887437484
+
+I cannot claim that this specific battery is guaranteed to be safe and undamaged upon arrival, as I am not the vendor, so I don't know where it is sourced from. It's just the one I used. I would recommend *against* buying really cheap batteries from places like AliExpress. See the article about battery safety I linked above, especially the section titled "What Every Battery User Should Know": https://batteryuniversity.com/article/lithium-ion-safety-concerns
 
 ## Potential Issues
 
