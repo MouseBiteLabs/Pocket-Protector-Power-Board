@@ -92,7 +92,7 @@ Testing the assembled board *is mandatory.* If you have misassembled it, a part 
 
 ### Step 1: Top Side Assembly and Testing for Short Circuits
 
-Assemble the top side parts using a hot plate and solder paste.
+Assemble the top side parts using a hot plate and solder paste. **Do not assemble the bottom side yet.**
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/a43da905-4812-4adc-804f-7f06c126c039)
 
