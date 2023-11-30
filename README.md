@@ -16,7 +16,7 @@ I highly suggest testing this board before installation in a Game Boy. Failure t
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/518b2961-8862-4ea5-a96e-8b36841dcca5)
 
-## Battery Safety
+## Mandatory Reading About Battery Safety
 
 "Bucket Mouse, all my devices have lithium ion batteries in them, and they're not dangerous. Why are you fear mongering?"
 
