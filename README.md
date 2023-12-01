@@ -220,8 +220,8 @@ A prepopulated cart from Mouser can be found here: https://www.mouser.com/Projec
 | Q1                          | 1   | MMBT3906           | SOT23    | PNP BJT          | [https://mou.sr/3G7ub2I](https://mou.sr/3G7ub2I) |
 | Q2, Q4                      | 2   | 2N7002             | SOT23    | N-channel MOSFET | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
 | Q3                          | 1   | MMBT3904           | SOT23    | NPN BJT          | [https://mou.sr/3Rv7yfA](https://mou.sr/3Rv7yfA) |
-| R1, R4, R8                  | 3   | 100k               | 0603     | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
-| R2, R3, R5, R6, R7, R9, R11 | 7   | 10k                | 0603     | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R1, R4, R6, R8              | 4   | 100k               | 0603     | Resistor         | [https://mou.sr/49bgMnu](https://mou.sr/49bgMnu) |
+| R2, R3, R5, R7, R9, R11     | 6   | 10k                | 0603     | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R10                         | 1   | 2.49k              | 0603     | Resistor         | [https://mou.sr/3G7MS6w](https://mou.sr/3G7MS6w) |
 | U1                          | 1   | TPS61202           | VSON-10  | Boost Converter  | [https://mou.sr/47hIE8c](https://mou.sr/47hIE8c) |
 | U2                          | 1   | TPS3840DL30        | SOT23-5  | Supervisory IC   | [https://mou.sr/47JYTuN](https://mou.sr/47JYTuN) |
