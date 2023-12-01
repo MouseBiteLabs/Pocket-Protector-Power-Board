@@ -141,6 +141,8 @@ The next step that will make your life easier later is to test the 5V generation
 
 If your voltage measures anything but 5V (+/-1%) then you have an issue. Probably a solder bridge underneath U1. Get to troubleshooting!
 
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/e033b20a-8fdf-457b-988b-f8e4da76f76a)
+
 ### Step 3: Populate the Back of the Board and Check Resistances
 
 The bottom side of the board is easy to hand solder - this was done on purpose! ;)
@@ -162,17 +164,41 @@ The USB-C breakout board sits on top of where the DC jack used to be. The board 
 2) Solder in the port, then the 5.1kΩ resistors R1 and R2.
 3) Place the board on top of the MGBC board, line up the solder pads through the holes, and flow solder through all five holes to secure it to the board.
 
+![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/03cf40d1-17e9-4d65-b042-12f66c5daa1d)
+
 ### Step 5: Charge Testing
 
-To do
+*Note: Charging will not work if F2 is blown. If you hare having issues, don't forget to check F2 for continuity.*
+
+To set up the system for charging:
+
+1) Connect the battery to the LIPO + and - holes on the power board using clips or wires. The DW01 should protect you if you short circuit the + and - wires together while you're soldering them in, but try to avoid it anyway.
+2) Connect pins 1, 2, and 3 of the power board socket to the power board using clips or wires - don't mount it to the MGBC just yet.
+3) Connect the DC hole on the power board to the DC hole on the MGBC.
+4) If your MGBC board revision is v1.6 or earlier, make sure you have removed EM7 on the MGBC board. If you have v2.0 or later, **do not** remove EM7.
+
+Measure the voltage of the battery with your multimeter. This should be measured from LIPO + pin to GND. Note what the voltage is - if it's higher than 4.1 V, then your battery is already fully charged so you may not be able to actually test the charging yet.
+
+Now, plug in a USB-C cable to charge the battery. The red LED should come on. Once the red LED turns off by itself, the charge cycle is complete, and the voltage should measure around 4.1 V when fully charged. If the battery voltage ever rises *above* 4.2 V while charging, there is a problem on your board AND the DW01 on your battery may be defective!
 
 ### Step 6: Testing 5V Supply With Lithium Ion Battery
 
-To do
+*Note: The power will not turn on if F1 is blown. If you hare having issues, don't forget to check F1 for continuity.*
 
-### Step 7: Final Installation
+Disconnect the USB-C cable, and disconnect at least the positive lead of the battery. Make sure any residual charge on the 5V output is gone. Measure the voltage (positive probe on pin 7, negative probe on GND) and make sure it's 0 V (or close to it). Then, perform the following steps:
 
-To do
+1) Connect the BT+ hole on the MGBC to the BT+ hole on the power board. **Be sure the 5V wire is still not connected (pin 7).**
+2) Reconnect the battery as before.
+
+Now, check the voltage on pin 2 of the power board (VCC): positive probe on pin 2, negative probe on GND. It should read somewhere between 3 V and 4.2 V (it will be your battery voltage). If you read 0 V, plug in your USB-C cable again and check to make sure the red LED turns on. Then measure the voltage to make sure the battery voltage appears on VCC. (If your DW01 tripped due to an overcurrent, like if you accidentally shorted the positive lead to GND, charging the battery will clear the error).
+
+Now you should be able to turn on the 5V supply with the power switch on the MGBC. Test with the multimeter to make sure the 5V is output when the switch is on. Note that when the switch is off, the output capacitors will still hold a charge on the 5V output, so you will likely read a slowly discharging voltage when the switch is off. The important thing is to make sure the voltage output is a solid 5V (plus or minus 1% margin).
+
+### Step 7: Final Testing and Assembly
+
+As long as your 5 V output is the proper voltage, you can now finally connect the 5 V output to the MGBC board. **Make sure the power switch is off when you do this.** Check to make sure everything works as expected, and you can remove all the clips and test leads and permanently solder the board in (it is probably best to remove the battery while you do this, and add it in last). 
+
+You may have to put the battery inside the back shell and *then* solder the wires into the power board. If you end up having any exposed metal, like if you spliced wires together, make sure you insulate the exposed area so you don't have any accidental short circuits.
 
 ## Bill of Materials
 
