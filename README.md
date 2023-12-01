@@ -158,6 +158,8 @@ This will also tell you if you have any new short circuits after assembling more
 
 ### Step 4: Preparing and Installing the USB-C Board
 
+**The following steps requires the main MGBC board. The rest of this procedure assumes the MGBC is properly built.**
+
 The USB-C breakout board sits on top of where the DC jack used to be. The board thickness should be 1.2mm for best fitment. 
 
 1) Trim the legs of the USB-C port before soldering it in the board, so that the bottom of the board is a flush surface.
