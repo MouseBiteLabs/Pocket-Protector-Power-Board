@@ -24,28 +24,6 @@ I am but one hobbyist, making things in my room. The batteries and battery manag
 
 Read this article before continuing down this path: https://batteryuniversity.com/article/lithium-ion-safety-concerns
 
-## Alternate LiPo Options
-
-If you are at all doubting your ability to assemble this board, I recommend Nataliethenerd's Safer Charge DC, as it comes pre-assembled with everything you need: https://www.nataliethenerd.com/product-page/safer-charge-dc
-
-<a href="https://www.nataliethenerd.com/product-page/safer-charge-dc"><img src="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/2f21e403-e07e-4f55-aace-cad3eed82622" /></a>
-
-Another option is to **have someone more skilled than you assemble the board for you.** I am not one of those people, but they certainly exist.
-
-## Successful Build Requirements
-
-In order to effectively, properly, and *safely* build this board, you really must:
-
-1) Read this *entire* README thoroughly and carefully
-2) Use a lithium ion battery that has an internal DW01 protection IC - **NO BARE CELLS**
-3) Use a hot plate and solder paste for good part placement
-4) Own a multimeter for testing voltages and measuring resistance/continuity
-5) Have advanced soldering skills
-6) Have modded a Game Boy console before
-7) Have a lot of patience (do not rush!)
-8) Double check the assembled board before final installment using the testing procedure below
-9) Have homeowner's/renter's insurance
-
 ## Board Characteristics and Order Information
 
 ### Power Board
@@ -86,6 +64,28 @@ This board was tested exclusively with this battery; any deviation from this one
 
 **This battery includes a DW01 protection IC to prevent overcharge and deep overdischarge. Any battery used in this build must include a DW01 protection IC. This circuit board does not include these protections.**
 
+## Alternate LiPo Options
+
+If you are at all doubting your ability to assemble this board, I recommend Nataliethenerd's Safer Charge DC, as it comes pre-assembled with everything you need: https://www.nataliethenerd.com/product-page/safer-charge-dc
+
+<a href="https://www.nataliethenerd.com/product-page/safer-charge-dc"><img src="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/2f21e403-e07e-4f55-aace-cad3eed82622" /></a>
+
+Another option is to **have someone more skilled than you assemble the board for you.** I am not one of those people, but they certainly exist.
+
+## Successful Build Requirements
+
+In order to effectively, properly, and *safely* build this board, you really must:
+
+1) Read this *entire* README thoroughly and carefully
+2) Use a lithium ion battery that has an internal DW01 protection IC - **NO BARE CELLS**
+3) Use a hot plate and solder paste for good part placement
+4) Own a multimeter for testing voltages and measuring resistance/continuity
+5) Have advanced soldering skills
+6) Have modded a Game Boy console before
+7) Have a lot of patience (do not rush!)
+8) Double check the assembled board before final installment using the testing procedure below
+9) Have homeowner's/renter's insurance
+
 ## Testing and Installation Steps
 
 Testing the assembled board *is mandatory.* If you have misassembled it, a part is incorrect, if there is a hidden solder bridge, or one of many other issues - your 5 V supply might be too high when you turn it on! This is not ideal for your Game Boy! But also, importantly, you may cause damage to your battery (which can explode). So you absolutely need to make sure everything is connected properly and working as expected.
@@ -93,7 +93,7 @@ Testing the assembled board *is mandatory.* If you have misassembled it, a part 
 ### Equipment
 
 1) You will need a multimeter to check resistances and voltages.
-2) You should have some sort of power source, like a AA battery holder with alligator clips or benchtop power supply. *You can use the lithium ion battery to test, but I would recommend something a bit safer if possible.*
+2) You should have some sort of power source, like a AA battery holder with alligator clips or benchtop power supply. *You can use the lithium ion battery to test for all steps, but I would recommend something a bit safer for the initial 5V supply test if possible.*
 3) I highly recommend getting test leads with clips, like this: https://mou.sr/47Yeuae. They really make testing easier without having to solder wires on.
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/9f8c8415-b49b-4e88-85ed-8134179d8872)
@@ -108,7 +108,7 @@ Afterwards, you'll want to check for short circuits on the charging IC (U3) with
 
 ![image](https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/assets/97127539/58f502a5-179e-43c5-8655-e216db90307c)
 
-Check to make sure the following measurements are not short circuited (0 ohms):
+Check to make sure the following measurements are **not** short circuited (0 ohms):
 
 1) BT+ and VUSB
 2) BT+ and GND
@@ -123,10 +123,7 @@ Check to make sure the following measurements are not short circuited (0 ohms):
 11) VPOS and DC
 12) VPOS and BT+
 
-One last set of measurements is to check R10 on the front side of the board.
-
-1) Measure the resistance across the terminals of R10. It should read approximately 2.49 kΩ, +/- 1%.
-2) Measure the resistance across the top terminal of R10 to the top terminal of R9 (on the back side of the board). Make sure it is not a short circuit.
+One last measurement is the resistance across the terminals of R10 (on the front of the board). It should read approximately 2.49 kΩ, +/- 1%.
 
 Any measured short circuits indicates a solder bridge somewhere on the board, most likely on the QFN package.
 
@@ -136,8 +133,9 @@ The next step that will make your life easier later is to test the 5V generation
 
 1) Populate R5 on the backside of the board.
 2) Connect pin 3 of the board to the negative end of a power source (like a battery holder or benchtop power supply).
-3) Connect pins 1 and 2 (SW and VCC) to the positive side of the power source. Turn the switch on (if you have a switch).
-4) Measure the 5V output - positive multimeter probe on pin 7 of the board, negative probe on GND.
+3) Connect pin 2 (VCC) to the positive side of the power source.
+4) Connect pin 1 (SW) to the positive side of the power source *after* pin 2 is connected. Turn the switch on (if you have a switch).
+5) Measure the 5V output - positive multimeter probe on pin 7 of the board, negative probe on GND.
 
 If your voltage measures anything but 5V (+/-1%) then you have an issue. Probably a solder bridge underneath U1. Get to troubleshooting!
 
@@ -152,7 +150,7 @@ The bottom side of the board is easy to hand solder - this was done on purpose! 
 Then check these resistances with a multimeter:
 
 1) Check R9. It must be approximately 10 kΩ.
-2) Check R10 (on the front of the board). It must be approximately 2.49 kΩ.
+2) Check R10 (on the front of the board). It must (still) be approximately 2.49 kΩ.
 
 This will also tell you if you have any new short circuits after assembling more parts. If you measure anything else, outside of a 1% margin, then something is wrong and it may be *dangerous* to use the board. Find the problem!
 
@@ -181,7 +179,7 @@ To set up the system for charging:
 
 Measure the voltage of the battery with your multimeter. This should be measured from LIPO + pin to GND. Note what the voltage is - if it's higher than 4.1 V, then your battery is already fully charged so you may not be able to actually test the charging yet.
 
-Now, plug in a USB-C cable to charge the battery. The red LED should come on. Once the red LED turns off by itself, the charge cycle is complete, and the voltage should measure around 4.1 V when fully charged. If the battery voltage ever rises *above* 4.2 V while charging, there is a problem on your board AND the DW01 on your battery may be defective!
+Now, plug in a USB-C cable to charge the battery. The red LED should come on. Once the red LED turns off by itself, the charge cycle is complete, and the voltage should measure around 4.1 V when fully charged. If the battery voltage ever rises *above* 4.2 V while charging, there may very well be a problem on your board assembly AND/OR the DW01 on your battery may be defective!
 
 ### Step 6: Testing 5V Supply With Lithium Ion Battery
 
