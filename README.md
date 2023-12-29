@@ -231,7 +231,7 @@ A prepopulated cart from Mouser can be found here: https://www.mouser.com/Projec
 
 | Reference Designators | Qty | Value/Part Number | Package | Description     | Source                                           |
 | --------------------- | --- | ----------------- | ------- | --------------- | ------------------------------------------------ |
-| J1                    | 1   | USB4105-GF-A      | \--     | USB-C Connector | [https://mou.sr/48BChgu](https://mou.sr/48BChgu) |
+| J1                    | 1   | 217175-0001       | 6 CKT   | USB-C Connector | [https://mou.sr/48BChgu](https://mou.sr/48BChgu) |
 | R1, R2                | 2   | 5.1k              | 0603    | Resistor        | [https://mou.sr/49J9uru](https://mou.sr/49J9uru) |
 
 ### Battery
