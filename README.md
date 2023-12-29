@@ -202,7 +202,7 @@ You may have to put the battery inside the back shell and *then* solder the wire
 
 ## Bill of Materials
 
-A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=b428eecae2. You may want to consider ordering multiple quantities of some parts just in case you lose some during assembly.
+A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=26118b92c3. You may want to consider ordering multiple quantities of some parts just in case you lose some during assembly.
 
 ### Regulator Board
 
