@@ -50,7 +50,7 @@ The zipped folder contains all the gerber files for this board.
 
 You can use the zipped folder with the gerber files at any board fabricator you like. **I am not selling this board.**
 
-Hosted on OSH Park here: https://oshpark.com/shared_projects/hsA91SMe
+Hosted on OSH Park here: https://oshpark.com/shared_projects/uPHw8orH
 
 ## Features
 
