@@ -214,7 +214,7 @@ A prepopulated cart from Mouser can be found here: https://www.mouser.com/Projec
 | D1                          | 1   | SMF5.0A-T13        | SOD-123  | TVS Diode        | [https://mou.sr/46lYsWi](https://mou.sr/46lYsWi) |
 | D2                          | 1   | 150060RS75000      | 0603     | LED              | [https://mou.sr/3ul6dOR](https://mou.sr/3ul6dOR) |
 | D3                          | 1   | VSS8D5M12HM3/H     | DO-221AD | Schottky Diode   | [https://mou.sr/3sHvulW](https://mou.sr/3sHvulW) |
-| L1                          | 1   | 2.2uH              | 1212     | Inductor         | [https://mou.sr/46qW94a](https://mou.sr/46qW94a) |
+| L1                          | 1   | 2.2uH              | 1212     | Inductor         | [https://www.mouser.com/ProductDetail/810-VLS3012HBX2R2M-N](https://www.mouser.com/ProductDetail/810-VLS3012HBX2R2M-N) |
 | Q1                          | 1   | MMBT3906           | SOT23    | PNP BJT          | [https://mou.sr/3G7ub2I](https://mou.sr/3G7ub2I) |
 | Q2, Q4                      | 2   | 2N7002             | SOT23    | N-channel MOSFET | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
 | Q3                          | 1   | MMBT3904           | SOT23    | NPN BJT          | [https://mou.sr/3Rv7yfA](https://mou.sr/3Rv7yfA) |
