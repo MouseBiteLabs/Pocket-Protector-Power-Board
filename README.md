@@ -121,7 +121,6 @@ Check to make sure the following measurements are **not** short circuited (0 ohm
 9) VPOS and VCC
 10) VPOS and 5V
 11) VPOS and DC
-12) VPOS and BT+
 
 One last measurement is the resistance across the terminals of R10 (on the front of the board). It should read approximately 2.49 kΩ, +/- 1%.
 
