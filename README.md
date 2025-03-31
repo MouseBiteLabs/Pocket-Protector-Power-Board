@@ -20,7 +20,9 @@ I highly suggest testing this board before installation in a Game Boy. Failure t
 
 "Bucket Mouse, all my devices have lithium ion batteries in them, and they're not dangerous. Why are you fear mongering?"
 
-I am but one hobbyist, making things in my room. The batteries and battery management systems you use in devices every day are created by engineering teams and produced by corporations who do rigorous testing on products they sell (or, at least, they are supposed to). Therefore, it is 100% up to *you* to safely manage these batteries, and know what you are doing, and know what to look out for with the batteries you purchase. This circuit board works for me, but as I am only one person, I have blind spots and I may have missed something (please tell me if I have). Also, I am confident in my soldering abilities - I am inherently *not* confident in yours. So, please, understand these risks and proceed at your own peril.
+I am but one hobbyist, making things in my room. The batteries and battery management systems you use in devices every day are created by engineering teams and produced by corporations who do rigorous testing on products they sell (or, at least, they are supposed to). 
+
+Therefore, for projects you assemble yourself, it is 100% up to *you* to safely manage these batteries, and know what you are doing, and know what to look out for with the batteries you purchase. This circuit board works for me, but as I am only one person, I have blind spots and I may have missed something (please tell me if I have). Also, I am confident in my soldering abilities - I am inherently *not* confident in yours. So, please, understand these risks and proceed at your own peril.
 
 Read this article before continuing down this path: https://batteryuniversity.com/article/lithium-ion-safety-concerns
 
